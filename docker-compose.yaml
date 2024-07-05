@@ -1,0 +1,8 @@
+services:
+  flask-app:
+    image: getting-started
+    ports:
+      - "8089:8081"
+    volumes:
+      - ./data:/code/app/data
+    restart: always
